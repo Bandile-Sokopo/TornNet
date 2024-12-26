@@ -13,8 +13,8 @@ public class BattleStats
     public int DefenseModifier;
     public int SpeedModifier;
     public int DexterityModifier;
-    public string[] StrengthInfo;
-    public string[] DefenseInfo;
-    public string[] SpeedInfo;
-    public string[] DexterityInfo;
+    public required string[] StrengthInfo;
+    public required string[] DefenseInfo;
+    public required string[] SpeedInfo;
+    public required string[] DexterityInfo;
 }

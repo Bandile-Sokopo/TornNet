@@ -7,9 +7,9 @@ namespace Core.Entities
 {
     public class Benefit
     {
-        string Type;
-        int Frequency;
-        int Requirement;
-        decimal Description;
+        public required string Type;
+        public int Frequency;
+        public int Requirement;
+        public decimal Description;
     }
 }

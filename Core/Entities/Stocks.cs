@@ -5,11 +5,11 @@ namespace Core.Entities;
 public class Stocks
 {
     public int StockId;
-    public string Name;
-    public string Acronym;
+    public required string Name;
+    public required string Acronym;
     public decimal CurrentPrice;
     public int MarketCap;
     public int TotalShares;
     public int Investors;
-    public Benefit Benefit;
+    public required Benefit Benefit;
 }

@@ -4,15 +4,15 @@ namespace Core.Entities;
 
 public class Items
 {
-    string Name;
-    string Description;
-    string Effect;
-    string Requirement;
-    string Type;
-    string WeaponType;
-    decimal BuyPrice;
-    decimal SellPrice;
-    decimal MarketValue;
-    int Circulation;
-    string Image;
+    public required string Name;
+    public required string Description;
+    public required string Effect;
+    public required string Requirement;
+    public required string Type;
+    public required string WeaponType;
+    public decimal BuyPrice;
+    public decimal SellPrice;
+    public decimal MarketValue;
+    public int Circulation;
+    public required string Image;
 }

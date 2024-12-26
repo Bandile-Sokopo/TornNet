@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using API.Entities;
+using Core.Entities;
 
 namespace API.Data
 {
@@ -9,10 +9,11 @@ namespace API.Data
         {
         }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<TransactionHistory> Transactions { get; set; }
-        public DbSet<OwnedStocks> OwnedStocks { get; set; }
-        public DbSet<StockTransactions> StockTransactions { get; set; }
+        public DbSet<BattleStats> BattleStats { get; set; }
+        public DbSet<Items> Items { get; set; }
+        public DbSet<Stocks> Stocks { get; set; }
+        public DbSet<WorkStats> WorkStats { get; set; }
+        public DbSet<Benefit> Benefit { get; set; }
 
     }
 }

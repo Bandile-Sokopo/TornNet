@@ -4,7 +4,7 @@ namespace Core.Entities;
 
 public class WorkStats
 {
-    int ManualLabor;
-    int Intelligence;
-    int Endurance;
+    public int ManualLabor;
+    public int Intelligence;
+    public int Endurance;
 }
