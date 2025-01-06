@@ -4,7 +4,8 @@ namespace Core.Entities;
 
 public class WorkStats
 {
-    public int ManualLabor;
-    public int Intelligence;
-    public int Endurance;
+    public int Id {get; set;}
+    public int ManualLabor {get; set;}
+    public int Intelligence {get; set;}
+    public int Endurance {get; set;}
 }

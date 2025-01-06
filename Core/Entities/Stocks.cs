@@ -4,12 +4,13 @@ namespace Core.Entities;
 
 public class Stocks
 {
-    public int StockId;
-    public required string Name;
-    public required string Acronym;
-    public decimal CurrentPrice;
-    public int MarketCap;
-    public int TotalShares;
-    public int Investors;
-    public required Benefit Benefit;
+    public int Id {get; set;}
+    public int StockId {get; set;}
+    public required string Name {get; set;}
+    public required string Acronym {get; set;}
+    public decimal CurrentPrice {get; set;}
+    public int MarketCap {get; set;}
+    public int TotalShares {get; set;}
+    public int Investors {get; set;}
+    public required Benefit Benefit {get; set;}
 }

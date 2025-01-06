@@ -4,17 +4,18 @@ namespace Core.Entities;
 
 public class BattleStats
 {
-    public float Strength;
-    public float Speed;
-    public float Dexterity;
-    public float Defense;
-    public float Total;
-    public int StrengthModifier;
-    public int DefenseModifier;
-    public int SpeedModifier;
-    public int DexterityModifier;
-    public required string[] StrengthInfo;
-    public required string[] DefenseInfo;
-    public required string[] SpeedInfo;
-    public required string[] DexterityInfo;
+    public int Id {get; set;}
+    public float Strength {get; set;}
+    public float Speed {get; set;}
+    public float Dexterity {get; set;}
+    public float Defense {get; set;}
+    public float Total {get; set;}
+    public int StrengthModifier {get; set;}
+    public int DefenseModifier {get; set;}
+    public int SpeedModifier {get; set;}
+    public int DexterityModifier {get; set;}
+    public required string[] StrengthInfo {get; set;}
+    public required string[] DefenseInfo {get; set;}
+    public required string[] SpeedInfo {get; set;}
+    public required string[] DexterityInfo {get; set;}
 }

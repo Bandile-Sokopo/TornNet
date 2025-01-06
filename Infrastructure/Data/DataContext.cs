@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Core.Entities;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Infrastructure.config;
 
 namespace API.Data
 {
@@ -14,6 +16,18 @@ namespace API.Data
         public DbSet<Stocks> Stocks { get; set; }
         public DbSet<WorkStats> WorkStats { get; set; }
         public DbSet<Benefit> Benefit { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(BattleStatsConfiguration).Assembly);
+            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(BenefitConfiguration).Assembly);
+            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(ItemsConfiguration).Assembly);
+            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(StockConfiguration).Assembly);
+            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(WorkStatsConfiguration).Assembly);
+        }
+        
 
     }
 }
