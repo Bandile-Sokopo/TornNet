@@ -3,13 +3,9 @@ using Core.Entities;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Infrastructure.config;
 
-namespace API.Data
-{
-    public class DataContext : DbContext
+namespace API.Data;
+    public class DataContext(DbContextOptions options) : DbContext(options)
     {
-        public DataContext(DbContextOptions options) : base(options)
-        {
-        }
 
         public DbSet<BattleStats> BattleStats { get; set; }
         public DbSet<Items> Items { get; set; }
@@ -30,4 +26,3 @@ namespace API.Data
         
 
     }
-}
