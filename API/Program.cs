@@ -1,4 +1,6 @@
 using API.Data;
+using Core.Interfaces;
+using Infrastructure.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,12 @@ builder.Services.AddDbContext<DataContext>(opt =>
 );
 
 builder.Services.AddOpenApi();
+
+builder.Services.AddScoped<IBattleStatRepository,BattleStatRepository>();
+builder.Services.AddScoped<IBattleStatRepository,BattleStatRepository>();
+builder.Services.AddScoped<IBattleStatRepository,BattleStatRepository>();
+builder.Services.AddScoped<IStockRepository,StockRepository>();
+builder.Services.AddScoped<IWorkStatRepository,WorkStatRepository>();
 
 var app = builder.Build();
 
