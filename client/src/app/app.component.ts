@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./layout/header/header.component";
+import { HttpClient } from '@angular/common/http';
+import { item } from './shared/Models/item';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +12,11 @@ import { HeaderComponent } from "./layout/header/header.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'TornNet';
+baseUrl = "http://localhost:5282/api";
+private http = inject(HttpClient);
+
+title = 'TornNet';
+
+items: item[] = [];
+
 }
